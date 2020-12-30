@@ -20,7 +20,7 @@ const Home = ({ offset, factor = 1 }: { offset: number; factor?: number }) => (
     >
       <Inner>
         <Intro />
-        <PageLinks />
+        <PageLinks hide="Home" />
         <Footer />
       </Inner>
     </Content>

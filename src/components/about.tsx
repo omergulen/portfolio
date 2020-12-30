@@ -15,7 +15,7 @@ const About = ({ offset, factor = 1 }: { offset: number; factor?: number }) => (
     <Content speed={0.4} offset={offset} factor={factor} overrideSx={{ alignItems: `left`, padding: `10vw`, width: `100%` }}>
       <Inner>
         <AboutMDX />
-          <PageLinks />
+          <PageLinks hide="About" />
           <Footer />
       </Inner>
     </Content>

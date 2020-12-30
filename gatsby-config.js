@@ -1,4 +1,4 @@
-module.exports = ({ basePath = `/`, mdx = true }) => ({
+module.exports = {
   siteMetadata: {
     siteTitle: `Cara`,
     siteTitleAlt: `Cara - @lekoarts/gatsby-theme-cara`,
@@ -8,7 +8,7 @@ module.exports = ({ basePath = `/`, mdx = true }) => ({
     siteLanguage: `en`,
     siteImage: `/banner.jpg`,
     author: `@lekoarts_de`,
-    basePath,
+    basePath: `/`,
   },
   plugins: [
     {
@@ -18,7 +18,7 @@ module.exports = ({ basePath = `/`, mdx = true }) => ({
         path: `${__dirname}/src/sections`,
       },
     },
-    mdx && {
+    {
       resolve: `gatsby-plugin-mdx`,
       options: {},
     },
@@ -27,4 +27,4 @@ module.exports = ({ basePath = `/`, mdx = true }) => ({
     `gatsby-plugin-emotion`,
     `gatsby-plugin-theme-ui`,
   ].filter(Boolean),
-})
+}

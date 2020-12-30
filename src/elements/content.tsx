@@ -8,10 +8,11 @@ type ContentProps = {
   offset: number
   children: React.ReactNode
   className?: string
-  factor?: number
+  factor?: number,
+  overrideSx?: object
 }
 
-const Content = ({ speed, offset, children, className = ``, factor = 1 }: ContentProps) => (
+const Content = ({ speed, offset, children, overrideSx, className = ``, factor = 1 }: ContentProps) => (
   <ParallaxLayer
     sx={{
       padding: [3, 4, 4, 5],
@@ -20,6 +21,8 @@ const Content = ({ speed, offset, children, className = ``, factor = 1 }: Conten
       alignItems: `center`,
       justifyContent: `center`,
       zIndex: 50,
+      width: `70%`,
+      ...overrideSx
     }}
     speed={speed}
     offset={offset}

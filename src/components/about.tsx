@@ -18,7 +18,6 @@ const About = ({ offset, factor = 1 }: { offset: number; factor?: number }) => (
       <Inner>
         <AboutMDX />
       </Inner>
-      <Footer />
     </Content>
   </div>
 )

@@ -63,54 +63,55 @@ const Home = ({ offset, factor = 1 }: { offset: number; factor?: number }) => (
             mt: 3,
             color: `primary`,
             fontWeight: `semibold`,
+            flexWrap: `wrap`,
             a: { color: `primary` },
           }}
         >
           <Link
             aria-label="Posts"
-            sx={{ fontWeight: `bold` }}
+            sx={{ pr:3, fontWeight: `bold` }}
             href="https://overengineered.pro/"
           >
             Posts
           </Link>
           <Link
             aria-label="GitHub"
-            sx={{ ml:3, fontWeight: `bold` }}
+            sx={{ pr:3, fontWeight: `bold` }}
             href="https://github.com/omergulen"
           >
             GitHub
           </Link>
           <Link
             aria-label="Twitter"
-            sx={{ ml: 3, fontWeight: `bold` }}
+            sx={{ pr: 3, fontWeight: `bold` }}
             href="https://twitter.com/omergulenn"
           >
             Twitter
           </Link>
           <Link
             aria-label="Superpeer"
-            sx={{ ml: 3, fontWeight: `bold` }}
+            sx={{ pr: 3, fontWeight: `bold` }}
             href="https://superpeer.com/omer"
           >
             Superpeer
           </Link>
           <Link
             aria-label="LinkedIn"
-            sx={{ ml: 3, fontWeight: `bold` }}
+            sx={{ pr: 3, fontWeight: `bold` }}
             href="https://www.linkedin.com/in/omergulen/"
           >
             LinkedIn
           </Link>
           <Link
             aria-label="Dribbble"
-            sx={{ ml: 3, fontWeight: `bold` }}
+            sx={{ pr: 3, fontWeight: `bold` }}
             href="https://dribbble.com/omergulen"
           >
             Dribbble
           </Link>
           <Link
             aria-label="Email"
-            sx={{ ml: 3, fontWeight: `bold` }}
+            sx={{ fontWeight: `bold` }}
             href="mailto:omrglen@gmail.com"
           >
             Email

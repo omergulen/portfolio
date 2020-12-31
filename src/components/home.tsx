@@ -30,7 +30,7 @@ const Home = ({ offset, factor = 1 }: { offset: number; factor?: number }) => (
           <Link
             aria-label="Posts"
             sx={{ fontWeight: `bold` }}
-            href="https://overenginereed.pro/"
+            href="https://overengineered.pro/"
           >
             Posts
           </Link>

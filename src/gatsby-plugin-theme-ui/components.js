@@ -3,8 +3,8 @@ import ProjectCard from "../components/project-card"
 
 const components = {
   // eslint-disable-next-line react/display-name
-  ProjectCard: ({ link, title, bg, children }) => (
-    <ProjectCard link={link} title={title} bg={bg}>
+  ProjectCard: ({ link, title, bgImage, bgStartColor, bgEndColor, children }) => (
+    <ProjectCard link={link} title={title} bgImage={bgImage} bgStartColor={bgStartColor} bgEndColor={bgEndColor}>
       {children}
     </ProjectCard>
   ),

@@ -14,8 +14,8 @@ const PageLinks = ({ hide = '' }: PageLinksProps) => {
         link: 'https://overengineered.pro'
     },
     {
-        title: 'Projects',
-        link: '/projects/'
+        title: 'Stuff',
+        link: '/stuff/'
     },
     {
         title: 'About',

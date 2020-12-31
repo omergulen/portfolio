@@ -10,8 +10,8 @@ exports.createPages = async ({ actions }, themeOptions) => {
     component: require.resolve(`./src/templates/home.tsx`),
   })
   createPage({
-    path: basePath + 'projects',
-    component: require.resolve(`./src/templates/projects.tsx`),
+    path: basePath + 'stuff',
+    component: require.resolve(`./src/templates/stuff.tsx`),
   })
   createPage({
     path: basePath + 'about',

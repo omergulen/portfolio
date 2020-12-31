@@ -6,11 +6,15 @@ type ProjectCardProps = {
   link: string
   title: string
   children: React.ReactNode
-  bg: string
+  bgImage: string,
+  bgStartColor: string,
+  bgEndColor: string,
 }
 
-const ProjectCard = ({ link, title, children, bg }: ProjectCardProps) => (
-  <a
+const ProjectCard = ({ link, title, children, bgImage, bgStartColor, bgEndColor }: ProjectCardProps) => {
+  const bg = `url("/${bgImage}"), linear-gradient(to right,${bgStartColor} 0%,${bgEndColor} 100%);` || `none`;
+  console.log('bg: ', bg);
+  return (<a
     href={link}
     target="_blank"
     rel="noreferrer noopener"
@@ -23,12 +27,18 @@ const ProjectCard = ({ link, title, children, bg }: ProjectCardProps) => (
       px: 4,
       py: [4, 5],
       color: `white`,
-      background: bg || `none`,
+      background: bg,
       transition: `all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important`,
+      backgroundRepeat: `no-repeat`,
+      backgroundPositionX: `120%`,
+      backgroundPositionY: `center`,
+      backgroundBlendMode: `luminosity`,
+      backgroundSize: `contain`,
       "&:hover": {
         color: `white !important`,
         transform: `translateY(-5px)`,
         boxShadow: `xl`,
+        backgroundPositionX: `100%`,
       },
     }}
   >
@@ -40,12 +50,12 @@ const ProjectCard = ({ link, title, children, bg }: ProjectCardProps) => (
         pt: 4,
         fontSize: [4, 5],
         fontWeight: `medium`,
-        lineHeight: 1,
+        lineHeight: 1
       }}
     >
       {title}
     </div>
-  </a>
-)
+  </a>);
+}
 
 export default ProjectCard

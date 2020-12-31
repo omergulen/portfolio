@@ -102,6 +102,7 @@ const Home = ({ offset, factor = 1 }: { offset: number; factor?: number }) => {
             }}
           >
             <Link
+              target="_blank"
               aria-label="Posts"
               sx={{ pr: 3, fontWeight: `bold` }}
               href="https://overengineered.pro/"
@@ -109,6 +110,7 @@ const Home = ({ offset, factor = 1 }: { offset: number; factor?: number }) => {
               Posts
           </Link>
             <Link
+              target="_blank"
               aria-label="GitHub"
               sx={{ pr: 3, fontWeight: `bold` }}
               href="https://github.com/omergulen"
@@ -116,6 +118,7 @@ const Home = ({ offset, factor = 1 }: { offset: number; factor?: number }) => {
               GitHub
           </Link>
             <Link
+              target="_blank"
               aria-label="Twitter"
               sx={{ pr: 3, fontWeight: `bold` }}
               href="https://twitter.com/omergulenn"
@@ -123,6 +126,7 @@ const Home = ({ offset, factor = 1 }: { offset: number; factor?: number }) => {
               Twitter
           </Link>
             <Link
+              target="_blank"
               aria-label="Superpeer"
               sx={{ pr: 3, fontWeight: `bold` }}
               href="https://superpeer.com/omer"
@@ -130,6 +134,7 @@ const Home = ({ offset, factor = 1 }: { offset: number; factor?: number }) => {
               Superpeer
           </Link>
             <Link
+              target="_blank"
               aria-label="LinkedIn"
               sx={{ pr: 3, fontWeight: `bold` }}
               href="https://www.linkedin.com/in/omergulen/"
@@ -137,6 +142,7 @@ const Home = ({ offset, factor = 1 }: { offset: number; factor?: number }) => {
               LinkedIn
           </Link>
             <Link
+              target="_blank"
               aria-label="Dribbble"
               sx={{ pr: 3, fontWeight: `bold` }}
               href="https://dribbble.com/omergulen"
@@ -144,6 +150,7 @@ const Home = ({ offset, factor = 1 }: { offset: number; factor?: number }) => {
               Dribbble
           </Link>
             <Link
+              target="_blank"
               aria-label="Email"
               sx={{ fontWeight: `bold` }}
               href="mailto:omrglen@gmail.com"

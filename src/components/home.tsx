@@ -16,12 +16,9 @@ const Home = ({ offset, factor = 1 }: { offset: number; factor?: number }) => (
       speed={0.4}
       offset={offset}
       factor={factor}
-      overrideSx={{ alignItems: `left`, padding: `10vw` }}
     >
       <Inner>
         <Intro />
-        <PageLinks hide="Home" />
-        <Footer />
       </Inner>
     </Content>
   </div>

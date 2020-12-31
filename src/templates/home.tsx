@@ -59,7 +59,7 @@ const constantsMap = {
 };
 
 const Portfolio = () => {
-  let w = 900;
+  let w = 400;
   console.log('w: ', w);
   return (
     <Layout>

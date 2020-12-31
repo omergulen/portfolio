@@ -1,5 +1,6 @@
 /** @jsx jsx */
 import { jsx, Flex, Link } from "theme-ui"
+import TypeIt from "typeit-react";
 import Inner from "../elements/inner"
 import Content from "../elements/content"
 import Background from "./bg"
@@ -17,6 +18,44 @@ const Home = ({ offset, factor = 1 }: { offset: number; factor?: number }) => (
     >
       <Inner>
         <Intro />
+        <TypeIt
+          element={`p`}
+          getBeforeInit={instance => {
+            instance
+              .pause(1500)
+              .delete(26)
+              .pause(200)
+              .type("developer tools.")
+              .pause(1500)
+              .delete(16)
+              .pause(200)
+              .type("test tools.")
+              .pause(1500)
+              .delete(11)
+              .pause(200)
+              .type("smart contracts.")
+              .pause(1500)
+              .delete(25)
+              .pause(200)
+              .type("automating things.")
+              .pause(1500)
+              .delete(18)
+              .pause(200)
+              .type("building bots.")
+              .pause(1500)
+              .delete(21)
+              .pause(200);
+            // Remember to return it!
+            return instance;
+          }}
+          options={{
+            speed: 100,
+            nextStringDelay: 750,
+            waitUntilVisible: true,
+            startDelete: true,
+            loop: true
+          }}
+        >I love building web & mobile applications.</TypeIt>
         <Flex
           sx={{
             justifyContent: `left`,

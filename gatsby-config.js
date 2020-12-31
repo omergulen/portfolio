@@ -1,13 +1,13 @@
 module.exports = {
   siteMetadata: {
-    siteTitle: `Cara`,
-    siteTitleAlt: `Cara - @lekoarts/gatsby-theme-cara`,
-    siteHeadline: `Cara - Gatsby Theme from @lekoarts`,
-    siteUrl: `https://cara.lekoarts.de`,
-    siteDescription: `Playful and Colorful One-Page portfolio featuring Parallax effects and animations`,
+    siteTitle: `Omer Gulen`,
+    siteTitleAlt: `Omer Gulen - Software Engineer`,
+    siteHeadline: `Omer Gulen - Personal Website`,
+    siteUrl: `https://omergulen.dev`,
+    siteDescription: `Personal website and portfolio.`,
     siteLanguage: `en`,
     siteImage: `/banner.jpg`,
-    author: `@lekoarts_de`,
+    author: `@omergulenn`,
     basePath: `/`,
   },
   plugins: [

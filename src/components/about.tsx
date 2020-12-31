@@ -8,16 +8,17 @@ import AboutMDX from "../sections/about"
 import Background from "./bg"
 import Footer from "./footer"
 import PageLinks from "./page-links"
+import Wavy from "./bg-wavy"
 
 const About = ({ offset, factor = 1 }: { offset: number; factor?: number }) => (
   <div>
+    {/* <Wavy offset={offset} factor={factor} /> */}
     <Background offset={offset} factor={factor} />
-    <Content speed={0.4} offset={offset} factor={factor} overrideSx={{ alignItems: `left`, padding: `10vw`, width: `100%` }}>
+    <Content speed={0.4} offset={offset} factor={factor}>
       <Inner>
         <AboutMDX />
-          <PageLinks hide="About" />
-          <Footer />
       </Inner>
+      <Footer />
     </Content>
   </div>
 )

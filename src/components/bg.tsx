@@ -6,7 +6,7 @@ import { UpDown, UpDownWide } from "../styles/animations"
 
 const Background = ({ offset, factor = 1 }: { offset: number; factor?: number }) => (
   <div sx={{ opacity: 0.3, width: `100%` }}>
-      <Divider speed={0.2} offset={offset} factor={factor}>
+    <Divider speed={0.2} offset={offset} factor={factor}>
       <UpDown>
         <SVG icon="triangle" hiddenMobile width={48} stroke color="icon_green" left="10%" top="10%" />
         <SVG icon="hexa" width={48} stroke color="icon_red" left="60%" top="70%" />

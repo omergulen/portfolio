@@ -59,21 +59,7 @@ const constantsMap = {
 };
 
 const Portfolio = () => {
-  let w = 1200;
-  if (isBrowser) {
-    w = window.innerWidth;
-    if (w <= 400) {
-      w = 400;
-    } else if (w <= 600) {
-      w = 600;
-    } else if (w <= 900) {
-      w = 900;
-    } else if (w <= 1200) {
-      w = 1200;
-    } else {
-      w = 1600;
-    }
-  }
+  let w = 900;
   console.log('w: ', w);
   return (
     <Layout>

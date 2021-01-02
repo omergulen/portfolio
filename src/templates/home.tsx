@@ -4,6 +4,8 @@ import Layout from "../components/layout"
 import Home from "../components/home"
 import Projects from "../components/projects"
 import About from "../components/about"
+import { OutboundLink } from "gatsby-plugin-google-analytics"
+import { MDXProvider } from "@mdx-js/react"
 
 const isBrowser = () => typeof window !== "undefined";
 const constantsMap = {
@@ -58,17 +60,24 @@ const constantsMap = {
   },
 };
 
+const components = {
+  a: OutboundLink
+}
+
 const Portfolio = () => {
   let w = 400;
   console.log('w: ', w);
   return (
-    <Layout>
-      <Parallax pages={constantsMap.parallaxPages[w]}>
-        <Home offset={constantsMap.homeOffset[w]} factor={constantsMap.homeFactor[w]} />
-        <Projects offset={constantsMap.projectsOffset[w]} factor={constantsMap.projectsFactor[w]} />
-        <About offset={constantsMap.aboutOffset[w]} factor={constantsMap.aboutFactor[w]} />
-      </Parallax>
-    </Layout>
-)};
+    <MDXProvider components={components}>
+      <Layout>
+        <Parallax pages={constantsMap.parallaxPages[w]}>
+          <Home offset={constantsMap.homeOffset[w]} factor={constantsMap.homeFactor[w]} />
+          <Projects offset={constantsMap.projectsOffset[w]} factor={constantsMap.projectsFactor[w]} />
+          <About offset={constantsMap.aboutOffset[w]} factor={constantsMap.aboutFactor[w]} />
+        </Parallax>
+      </Layout>
+    </MDXProvider>
+  )
+};
 
 export default Portfolio;

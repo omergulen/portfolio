@@ -1,6 +1,7 @@
 /** @jsx jsx */
 import React from "react"
 import { jsx } from "theme-ui"
+import { OutboundLink } from "gatsby-plugin-google-analytics"
 
 type ProjectCardProps = {
   link: string
@@ -13,7 +14,7 @@ type ProjectCardProps = {
 
 const ProjectCard = ({ link, title, children, bgImage, bgStartColor, bgEndColor }: ProjectCardProps) => {
   const bg = `url("/${bgImage}"), linear-gradient(to right,${bgStartColor} 0%,${bgEndColor} 100%);` || `none`;
-  return (<a
+  return (<OutboundLink
     href={link}
     target="_blank"
     rel="noreferrer noopener"
@@ -54,7 +55,7 @@ const ProjectCard = ({ link, title, children, bgImage, bgStartColor, bgEndColor 
     >
       {title}
     </div>
-  </a>);
+  </OutboundLink>);
 }
 
 export default ProjectCard

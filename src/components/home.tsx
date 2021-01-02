@@ -1,5 +1,6 @@
 /** @jsx jsx */
 import { jsx, Flex, Link, useColorMode } from "theme-ui"
+import { OutboundLink } from "gatsby-plugin-google-analytics"
 import TypeIt from "typeit-react";
 import Inner from "../elements/inner"
 import Content from "../elements/content"
@@ -101,62 +102,62 @@ const Home = ({ offset, factor = 1 }: { offset: number; factor?: number }) => {
               a: { color: `primary` },
             }}
           >
-            <Link
+            <OutboundLink
               target="_blank"
               aria-label="Posts"
               sx={{ pr: 3, fontWeight: `bold` }}
               href="https://overengineered.pro/"
             >
               Posts
-          </Link>
-            <Link
+          </OutboundLink>
+            <OutboundLink
               target="_blank"
               aria-label="GitHub"
               sx={{ pr: 3, fontWeight: `bold` }}
               href="https://github.com/omergulen"
             >
               GitHub
-          </Link>
-            <Link
+          </OutboundLink>
+            <OutboundLink
               target="_blank"
               aria-label="Twitter"
               sx={{ pr: 3, fontWeight: `bold` }}
               href="https://twitter.com/omergulenn"
             >
               Twitter
-          </Link>
-            <Link
+          </OutboundLink>
+            <OutboundLink
               target="_blank"
               aria-label="Superpeer"
               sx={{ pr: 3, fontWeight: `bold` }}
               href="https://superpeer.com/omer"
             >
               Superpeer
-          </Link>
-            <Link
+          </OutboundLink>
+            <OutboundLink
               target="_blank"
               aria-label="LinkedIn"
               sx={{ pr: 3, fontWeight: `bold` }}
               href="https://www.linkedin.com/in/omergulen/"
             >
               LinkedIn
-          </Link>
-            <Link
+          </OutboundLink>
+            <OutboundLink
               target="_blank"
               aria-label="Dribbble"
               sx={{ pr: 3, fontWeight: `bold` }}
               href="https://dribbble.com/omergulen"
             >
               Dribbble
-          </Link>
-            <Link
+          </OutboundLink>
+            <OutboundLink
               target="_blank"
               aria-label="Email"
               sx={{ fontWeight: `bold` }}
               href="mailto:omrglen@gmail.com"
             >
               Email
-          </Link>
+          </OutboundLink>
           </Flex>
         </Inner>
       </Content>

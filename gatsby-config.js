@@ -22,6 +22,12 @@ module.exports = {
       resolve: `gatsby-plugin-mdx`,
       options: {},
     },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: `UA-122322547-5`,
+      },
+    },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-typescript`,
     `gatsby-plugin-emotion`,

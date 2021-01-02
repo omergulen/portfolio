@@ -13,7 +13,6 @@ type ProjectCardProps = {
 
 const ProjectCard = ({ link, title, children, bgImage, bgStartColor, bgEndColor }: ProjectCardProps) => {
   const bg = `url("/${bgImage}"), linear-gradient(to right,${bgStartColor} 0%,${bgEndColor} 100%);` || `none`;
-  console.log('bg: ', bg);
   return (<a
     href={link}
     target="_blank"

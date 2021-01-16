@@ -30,7 +30,7 @@ const ProjectCard = ({ link, title, children, bgImage, bgStartColor, bgEndColor 
       background: bg,
       transition: `all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important`,
       backgroundRepeat: `no-repeat`,
-      backgroundPositionX: `110%`,
+      backgroundPositionX: [`200%`, `170%`, `125%`, `115%`, `110%`],
       backgroundPositionY: `center`,
       backgroundBlendMode: `luminosity`,
       backgroundSize: `contain`,

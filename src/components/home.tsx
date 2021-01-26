@@ -104,6 +104,7 @@ const Home = ({ offset, factor = 1 }: { offset: number; factor?: number }) => {
           >
             <OutboundLink
               target="_blank"
+              rel="noopener"
               aria-label="Posts"
               sx={{ pr: 3, fontWeight: `bold` }}
               href="https://overengineered.pro/"
@@ -112,6 +113,7 @@ const Home = ({ offset, factor = 1 }: { offset: number; factor?: number }) => {
           </OutboundLink>
             <OutboundLink
               target="_blank"
+              rel="noopener"
               aria-label="GitHub"
               sx={{ pr: 3, fontWeight: `bold` }}
               href="https://github.com/omergulen"
@@ -120,6 +122,7 @@ const Home = ({ offset, factor = 1 }: { offset: number; factor?: number }) => {
           </OutboundLink>
             <OutboundLink
               target="_blank"
+              rel="noopener"
               aria-label="Twitter"
               sx={{ pr: 3, fontWeight: `bold` }}
               href="https://twitter.com/omergulenn"
@@ -128,6 +131,7 @@ const Home = ({ offset, factor = 1 }: { offset: number; factor?: number }) => {
           </OutboundLink>
             <OutboundLink
               target="_blank"
+              rel="noopener"
               aria-label="Superpeer"
               sx={{ pr: 3, fontWeight: `bold` }}
               href="https://superpeer.com/omer"
@@ -136,6 +140,7 @@ const Home = ({ offset, factor = 1 }: { offset: number; factor?: number }) => {
           </OutboundLink>
             <OutboundLink
               target="_blank"
+              rel="noopener"
               aria-label="LinkedIn"
               sx={{ pr: 3, fontWeight: `bold` }}
               href="https://www.linkedin.com/in/omergulen/"
@@ -144,6 +149,7 @@ const Home = ({ offset, factor = 1 }: { offset: number; factor?: number }) => {
           </OutboundLink>
             <OutboundLink
               target="_blank"
+              rel="noopener"
               aria-label="Dribbble"
               sx={{ pr: 3, fontWeight: `bold` }}
               href="https://dribbble.com/omergulen"
@@ -152,6 +158,7 @@ const Home = ({ offset, factor = 1 }: { offset: number; factor?: number }) => {
           </OutboundLink>
             <OutboundLink
               target="_blank"
+              rel="noopener"
               aria-label="Email"
               sx={{ fontWeight: `bold` }}
               href="mailto:omrglen@gmail.com"
